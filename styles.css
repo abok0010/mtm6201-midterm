@@ -1,0 +1,574 @@
+@font-face {
+    font-family: 'Cupcake';
+    src: url(fonts/Cupcake\ Factory.ttf);
+  }
+                                                              /** makes a font family for the custom fonts for site**/
+  @font-face {
+    font-family: 'Momcake';
+    src: url(fonts/Momcake-Thin.otf);
+  }
+  
+  
+  body h1{                                                              /********** changes font for every page **/
+    font-family: 'Cupcake';
+  }
+  
+  body h2{                                            
+    font-family: 'Cupcake';
+  }
+  
+  p{
+    font-family: 'Momcake';
+  }
+  nav{
+    font-family: 'Momcake';
+  }
+  
+    .wrapper{                                                               /*wraps the content to the wrapper container**/
+      margin: auto;
+      max-width: 1200px;
+      box-sizing: border-box;
+      background-color: #F5F0EA;
+      border: rgb(161, 158, 158) thin solid;
+     
+  
+    }
+   a{
+    text-decoration: none;                                        /*removes link underline from navigation buttons**/
+    color: #EDB7E0;
+   }
+  
+  /*homepage (desktop)****/
+   
+    .img1{
+      
+          width: 200px;											/*  This will take the image from the html and resize with those dimensions. Adds white background, curved border and box shadow behind logo*/
+          height: 200px;
+      transform: translate(20px);
+      background-color: white;
+      margin-top: 10px;
+      border: white solid;
+      padding: 2px 2px 2px 2px;
+      border-radius: 20px;
+      box-shadow: 1px 2px 2px 1px #ccc8c2;
+      
+      }
+  
+  
+  
+  
+    ul{                                     /**stylizes the nav and organizes it to the top of the page*/
+      color: #EDB7E0;
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:space-around;
+      font-size: larger;
+      font-weight: bold;
+     
+   
+     }
+  
+     .cart{                               /*stylizes the cart button and adds an animation to change the color when the button his clicked**/
+       color: white;
+       background-color: #EDB7E0;
+       padding: 5px 20px 5px 20px;
+       border-radius: 18px;
+  
+     }
+     .cart:active{
+     animation-name: cartchange;
+      animation-duration: 2s;
+    }
+  
+     @keyframes cartchange {
+      from {background-color: #EDB7E0;}
+    to {background-color: #f800be;}
+      
+     }
+    
+  
+       li:hover {
+        background-color: #ffffff;        /*changes the color of the navs when hovered over with cursor**/
+       }
+       
+     
+   
+  
+  
+       header{
+        padding: 5px 0px 5px 10px;              /***manages the first header text and stylizes it**/
+        text-align: center;
+        background-color:#fff9fe ;
+        display: block;
+        color: #EDB7E0;
+        border-top:solid #eaffe4
+   
+     
+      }
+  
+  
+  
+      .img0{
+       float: left;
+        width: 500px;											/*  This will take the image from the html and resize with those dimensions*/
+        height: 400px;
+        
+        margin-left: 2px;
+        margin-right: 20px;
+        border-radius: 10px;
+      }
+  
+      .img0:active{
+        transform: scale(3);        /*clicking the image cause it to become larger*/
+        transition: transform 3s;
+      }
+    
+      .homepage-top{
+        
+        padding: 20px 20px 80px 20px;     /*all the small text gets enlarged and changes color*/
+        font-size: larger;
+        color: #8ABE7B;
+      }
+      p{
+         padding-bottom: 15px;
+      }
+  
+      button{                                                   /*stylize the button and positions it*/
+        border: none;
+        margin-bottom: 20px;
+        background-color: #EDB7E0;
+        border-radius: 20px;
+        border-width: thin;
+        color: white;
+        font-size: larger;
+        font-weight: bold;
+        height: 60px;
+        width: 300px;
+        float: right;
+        margin-right: 200px;
+        transition: 0.6s;
+        text-align: center;
+      }
+      button:hover{                             /*hovering over the button causes it to fade out and in*/
+        background-color: #ffffff;
+        opacity: 50%;
+        transition: opacity .6s;
+      }
+  
+      .header2{
+        padding: 0px;
+        text-align: center;
+        background-color:#fff9fe ;          /*stylizes bottom header**/
+        display: block;
+        font-size: larger;
+        font-weight: bold;
+        color: #EDB7E0;
+        border: rgb(161, 158, 158) thin solid;
+      }
+      
+      .questions{                                         /*positions  items in container and changes color of background*/
+        padding-top: 20px;
+        padding-bottom: 100px;
+        background-color: #f7f1eb;
+        margin-bottom: -22px;
+        border: rgb(161, 158, 158) thin solid;
+        
+      }
+      .questions p{
+                                                    /*centers text and changes color and size*/
+        text-align: center;
+        color:#8ABE7B;
+        font-size: large;
+        
+      }
+  
+      .button2{                                       /*positions the second button*/
+      margin-right: 250px;
+      text-align: center;
+      }
+  
+      
+  .follow{                     /*positions  items in container and changes color of background text and resizes*/
+    height: 34px; 
+    text-align: center;
+    background-color: #F0CF82;
+    padding: 0px;
+    font-size: larger;
+    font-weight: bold;
+    color: #db7ec5;
+  }
+  
+  
+  .img2{                                                /*resizes image and changes position*/
+    width: 30px;
+    height: 28px;
+    transform: translate(180px ,-55px);
+  
+  }
+  .img3{                                                  /*resizes image and changes position*/
+    width: 30px;
+    width: 30px;
+    height: 28px;
+    transform: translate(190px ,-55px);
+  
+  }
+  
+  footer{
+    background-color: #EDB7E0;    /*stylizes the footer**/
+    text-align:left;
+    font-weight: bold;
+  
+  padding-top: 2px;
+  padding-left: 20px;
+  
+  
+  }
+  
+  
+  /*about page (desktop)**/
+  .owner{
+   
+    width: 450px;											/*  This will take the image from the html and resize with those dimensions*/
+    height: 330px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  .abouttop{                          /*Organize all the content in the container and puts it in a column*/
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #fff0cc;
+    text-align: center;
+    font-size: large;
+    color: #8ABE7B;
+  }
+  .abouttop p{                    /*positions text and adds a background color to it*/
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(252, 246, 246);
+    border-radius: 5px;
+  }
+  
+  /*event page (desktop)**/
+  
+  
+  .cardimg{                       /*resizes the image*/
+    width: 300px;
+    height: 250px;
+    margin-top: -15px;
+  }
+  
+  
+  .event-top{           /*adds background color and centers the content*/
+    background-color:rgb(252, 246, 246) ;
+    text-align: center;
+    
+    
+  }
+  .event-top p {          /*changes font color and weight*/
+    color: #8ABE7B;
+    font-size: larger;
+  
+  }
+  .event-top h2{        /*changes heading color*/
+    color:#8ABE7B;
+  }
+  .cardimg{
+    margin-top: 20px;
+    background-color: #ccc8c2; /*adds a background border around the image */
+    padding: 1rem;
+  }
+  
+  .wedimg{      /*adds a background border around the image. Also resizes it */
+    width: 300px;
+    height: 250px;
+    margin-top: -15px;
+    margin-top: 20px;
+    background-color: #ccc8c2;
+    padding: 1rem;
+  
+  }
+  
+  
+  /**********************************************************/
+  
+  
+  /*mobile*/
+  /*for mobile screens*/
+  @media screen and (max-width: 760px){  
+      /*top part of the page*/
+  body{
+      background-color: #F5F0EA;    /*adds a background color*/
+  }
+  a{      /*removes link on the nav and changes color*/
+    text-decoration: none;
+    color: #EDB7E0
+    ;
+  }
+    .wrapper{                     /*wraps the content to the wrapper container**/
+      margin: auto;
+      max-width: 700px;
+      box-sizing: border-box;
+    }
+  
+   .button{
+    margin-left: 520px;       /*positions the button*/
+   }
+  
+  
+  
+  
+    .img0{                /*hides the image so the background image can be displayed*/
+      display: none;
+    }
+      .img1{
+      
+          width: 100px;											/*  This will take the image from the html and resize with those dimensions. Adds background color and boxshadow*/
+          height: 100px;
+      background-color: white;
+      border-radius: 40px;
+      box-shadow: 1px 2px 2px 1px #ccc8c2;
+      }
+  
+      ul{                                              /**stylizes the nav and organizes it to the top of the page*/
+       color: #EDB7E0;
+       list-style-type: none; 
+       display: flex;
+      margin-top: -10px;
+       flex-direction: column;
+       flex-wrap: wrap;
+       align-items: center;
+       justify-content: center;
+       font-size: larger;
+       margin-left: -5px;
+       margin-right: 10px;
+  
+       
+      }
+  
+      li{
+        padding: 1rem;      /*adds padding to each list item*/
+       
+      }
+      .cart{                    /*stylizes the cart button and adds paddings*/
+        color: white;
+        background-color: #EDB7E0;
+        padding: 5px 20px 5px 20px;
+        border-radius: 18px;
+      }
+     
+  
+        li:hover {                    /*hovering each list item changes the color*/
+         background-color: #ffffff;
+        }
+        
+      
+        nav{                          /*positions the nav and adds background color*/
+          margin-top: -5px;
+          background-color: #F5F0EA;
+          margin-bottom: 20px;
+          
+        }
+  
+  
+  
+      header{                                     /*positions and centers the header*/
+          padding: 5px 0px 5px 10px;
+          text-align: center;
+          background-color:#fff9fe ;
+          display: block;
+          color: #EDB7E0;
+          box-shadow: 1px 2px 2px 1px #ccc8c2;
+       
+        }
+       .containerh{           /*adds the background image and positions it so the text can be used to center over it*/
+        background-image: url("/images/piece-of-cake-1520639.jpg");
+        margin-top: -10px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 20px;
+        padding-bottom: 20px;
+  
+        }
+  
+      .homepage-top{                          /*changes font color to white and adds padding around it*/
+        color: white;
+        text-align: center;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+            background-color:rgba(0, 0, 0, 0.4);
+            border:none;
+      }
+  
+      button{                           /*stylizes the button and changes position*/
+        border: none;
+        margin-bottom: 20px;
+        background-color: #EDB7E0;
+        border-radius: 20px;
+        border-width: thin;
+        color: white;
+        font-size: larger;
+        font-weight: bold;
+        overflow: hidden;
+        height: 40px;
+        width: 200px; 
+      }
+  
+      button:hover{       /*hovering over the button changes the color*/
+        background-color: #ffffff;
+      }
+  
+      .button2{               /*second button changes position and gets centered*/
+        text-align: center;
+        margin-left: 580px;
+      }
+  
+      .header2{         /*stylizes bottom header**/
+        padding: 0px;
+        text-align: center;
+        background-color:#fff9fe ;
+        display: block;
+        font-size: larger;
+        font-weight: bold;
+        color: #EDB7E0;
+        box-shadow: 1px 2px 2px 1px #ccc8c2;
+        border-style: solid;
+        border-color: white;
+      }
+      .questions{                                          /*positions  items in container and changes color of background*/
+        box-shadow: 1px 2px 2px 1px #ccc8c2;
+        padding-top: 20px;
+        background-color: #f7f1eb;
+        margin-bottom: -22px;
+      }
+      .questions p{
+                                                              /*centers text and changes color and size*/
+        text-align: center;
+        color:#8ABE7B;
+        font-size: large;
+      }
+      .button2{
+  
+      text-align: center;
+      }
+  
+  
+      .follow{                        /*positions  items in container and changes color of background text and resizes*/
+        height: 34px;
+        text-align: center;
+        background-color: #F0CF82;
+        padding: 0px;
+      
+        font-size: larger;
+        font-weight: bold;
+        color: #db7ec5;
+      
+        
+      }
+        
+      .img2{                            /*resizes image and changes position*/
+        width: 30px;
+        height: 28px;
+        transform: translate(180px ,-55px);
+  
+      }
+      .img3{                         /*resizes image and changes position*/                  
+        width: 30px;
+        height: 28px;
+        transform: translate(190px ,-55px);
+  
+      }
+  
+      footer{                                   /*stylizes the footer**/
+        background-color: #EDB7E0;
+        text-align: center;
+        font-weight: bold;
+        padding-top: 2px;
+      }
+  
+  
+      /*about mobile**/
+        .owner{
+      
+          width: 450px;											/*  This will take the image from the html and resize with those dimensions*/
+          height: 330px;
+          border-radius: 5px;
+          margin-top: 20px;
+          margin-left: auto;
+          margin-right: auto;
+  
+        }
+        .abouttop{                  /*Organize all the content in the container and puts it in a column*/
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+          background-color: #fff0cc;
+          text-align: center;
+          font-size: large;
+          color: #8ABE7B;
+        }
+        .abouttop p{                   /*positions text and adds a background color and border to it*/
+          margin-right: 20px;
+          margin-right: 20px;
+          margin-left: 20px;
+          padding-top: 10px;
+          padding: 20px 20px 20px 20px;
+          background-color: rgb(252, 246, 246);
+          border-radius: 5px;
+        }
+  
+  
+  
+      /*event page mobile */
+  
+     
+  
+      .cardimg{                 /*resizes the image*/
+        width: 300px;
+        height: 250px;
+        margin-top: -15px;
+      }
+  
+  
+      .event-top{                             /*adds background color to the container and centers text*/
+        background-color:rgb(252, 246, 246) ;
+        text-align: center;
+      }
+  
+  
+      .event-top p {                  /*font color change*/
+        color: #8ABE7B;
+      }
+      .event-top h2{                  /*font color change*/
+        color:#8ABE7B;
+      }
+      .cardimg{                       /*adds a background border around the image */
+        margin-top: 20px;
+        background-color: #ccc8c2;
+        padding: 1rem;
+      }
+  
+      .wedimg{                 /*adds a background border around the image. Also resizes it */
+        width: 300px;
+        height: 250px;
+        margin-top: -15px;
+        margin-top: 20px;
+        background-color: #ccc8c2;
+        padding: 1rem;
+  
+      }
+  
+  
+      }
+  
+  
+  
+  
